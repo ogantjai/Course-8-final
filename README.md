@@ -1,4 +1,7 @@
 # Course-8-final
+https://labs.cognitiveclass.ai/v2/tools/cloud-ide-kubernetes?ulid=ulid-cde31a45be139d1e0a3e774bb6e103a3cdd0542e
+
+
 # Import required libraries
 import pandas as pd
 import dash
