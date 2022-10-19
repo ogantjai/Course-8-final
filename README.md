@@ -1,5 +1,4 @@
 # Course-8-final
-https://labs.cognitiveclass.ai/v2/tools/cloud-ide-kubernetes?ulid=ulid-cde31a45be139d1e0a3e774bb6e103a3cdd0542e
 
 
 
@@ -29,17 +28,14 @@ airline_data =  pd.read_csv('https://cf-courses-data.s3.us.cloud-object-storage.
 
 year_list = [i for i in range(2005, 2021, 1)]
 
-"""Compute graph data for creating yearly airline performance report 
 
 
 
-Argument:
+
      
-    df: Filtered dataframe
+df: Filtered dataframe
     
-Returns:
-   Dataframes to create graph. 
-"""
+
 def compute_data_choice_1(df):
    
     bar_data = df.groupby(['Month','CancellationCode'])['Flights'].sum().reset_index()
@@ -54,16 +50,7 @@ def compute_data_choice_1(df):
     return bar_data, line_data, div_data, map_data, tree_data
 
 
-"""Compute graph data for creating yearly airline delay report
 
-This function takes in airline data and selected year as an input and performs computation for creating charts and plots.
-
-Arguments:
-    df: Input airline data.
-    
-Returns:
-    Computed average dataframes for carrier delay, weather delay, NAS delay, security delay, and late aircraft delay.
-"""
 def compute_data_choice_2(df):
     
     avg_car = df.groupby(['Month','Reporting_Airline'])['CarrierDelay'].mean().reset_index()
