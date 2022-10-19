@@ -1,4 +1,4 @@
-# Course-8-final
+Course-8-final
 
 
 
@@ -67,9 +67,9 @@ app.layout = html.Div(children=[
                                 html.H1('US Domestic Airline Flights Performance', style={'textAlign':'left','color':'#503D36', 'font-size':24})
                                
                                 html.Div([
-                                    # Add an division
+                                    
                                     html.Div([
-                                        # Create an division for adding dropdown helper text for report type
+                                        
                                         html.Div(
                                             [
                                             html.H2('Report Type:', style={'margin-right': '2em'}),
