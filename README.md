@@ -2,7 +2,7 @@
 https://labs.cognitiveclass.ai/v2/tools/cloud-ide-kubernetes?ulid=ulid-cde31a45be139d1e0a3e774bb6e103a3cdd0542e
 
 
-# Import required libraries
+
 import pandas as pd
 import dash
 import dash_html_components as html
@@ -13,20 +13,20 @@ import plotly.express as px
 from dash import no_update
 
 
-# Create a dash application
+
 app = dash.Dash(__name__)
 
-# REVIEW1: Clear the layout and do not display exception till callback gets executed
+
 app.config.suppress_callback_exceptions = True
 
-# Read the airline data into pandas dataframe
+
 airline_data =  pd.read_csv('https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DV0101EN-SkillsNetwork/Data%20Files/airline_data.csv', 
                             encoding = "ISO-8859-1",
                             dtype={'Div1Airport': str, 'Div1TailNum': str, 
                                    'Div2Airport': str, 'Div2TailNum': str})
 
 
-# List of years 
+
 year_list = [i for i in range(2005, 2021, 1)]
 
 """Compute graph data for creating yearly airline performance report 
